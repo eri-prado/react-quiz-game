@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Radio = ({ question, options, onChange, value, id, active }) => {
-  console.log(active);
+
+  if (active === false) return null;
+
   return (
     <fieldset>
       <legend>{question}</legend>
